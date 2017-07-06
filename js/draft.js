@@ -18,8 +18,8 @@ for(let key of mailDraft){
   let newLi = document.createElement('li');
   newLi.innerHTML=`<a href="compose.html">
       <span id='name' class="mail-sender">${key.name}</span>
-      <span id='subject' class="mail-subject">${key.subject}</span>
-      <span id='message' class="mail-message-preview">${key.message.substr(0,25)+'...'}</span>
+      <span id='subject' class="mail-subject">&lt;${key.subject}&gt;</span>
+      <span id='message' class="mail-message-preview"><b>${key.message.substr(0,25)+'...'}</b></span>
   </a>`;
   list.appendChild(newLi);
 }

@@ -2,37 +2,37 @@
 
 let receivedMail = [
   {
-    mlink: "http://www.Youtube.com",
+    mlink: "#",
     name: "Youtube",
     subject: "New Subscribers!",
     message: "You have ten more subscriptions click here to view full list"
   },
   {
-    mlink: "http://www.facebook.com",
+    mlink: "#",
     name: "Facebook",
     subject: "New Friend Request!",
     message: "You have a friend request. Click here to view full list"
   },
   {
-    mlink: "http://www.Youtube.com",
+    mlink: "#",
     name: "Youtube",
     subject: "New Subscribers!",
     message: "You have ten more subscriptions click here to view full list"
   },
   {
-    mlink: "http://www.facebook.com",
+    mlink: "#",
     name: "Facebook",
     subject: "New Friend Request!",
     message: "You have a friend request. Click here to view full list"
   },
   {
-    mlink: "http://www.facebook.com",
+    mlink: "#",
     name: "Facebook",
     subject: "New Message!",
     message: "You have a new message. Click here to view full list"
   },
   {
-    mlink: "http://www.Youtube.com",
+    mlink: "#",
     name: "Youtube",
     subject: "New Vedeo from Molt",
     message: "Molt just uploaded a new video"
@@ -44,8 +44,9 @@ for(let key of receivedMail){
   let newLi = document.createElement('li');
   newLi.innerHTML=`<a href="${key.mlink}">
       <span id='name' class="mail-sender">From: ${key.name}</span>
-      <span id='subject' class="mail-subject">Sub: ${key.subject}</span>
-      <span id='message' class="mail-message-preview">${key.message.substr(0,25)+'...'}</span>
+      <span id='subject' class="mail-subject">Sub: &lt;${key.subject}&gt;</span>
+      <span id='message' class="mail-message-preview"><strong>${key.message.substr(0,25)+'...'}</strong></span>
   </a>`;
+  newLi.style.borderWidth = "thick";
   list.appendChild(newLi);
 }

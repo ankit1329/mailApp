@@ -1,19 +1,44 @@
 <HTML>
    <HEAD>
       <meta charset="utf-8"/>
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
       <script src="js/mail.js"></script>
       <link rel='stylesheet' href="css/mail.css" />
    </HEAD>
 <BODY>
 
+  <nav class="navbar navbar-inverse">
+ <div class="container">
+   <div class="navbar-header">
+     <a class="navbar-brand" href="#">Mail App</a>
+   </div>
 
+ </nav>
+ <div class=Container-fluid>
+   <div class="Box1">
+     <ul>
+
+         <li class="btn btn-md btn-warning btn-block active">
+             <a href="compose.html">Compose</a>
+         </li>
+         <li class="btn btn-md btn-warning btn-block ">
+             <a href="inbox.html">Inbox   </a>
+         </li>
+         <li class="btn btn-md btn-warning btn-block">
+             <a href="draft.html">Draft  </a>
+         </li>
+         <li class="btn btn-md btn-warning btn-block">
+             <a href="sent.html">Sent Items</a>
+         </li>
+
+     </ul>
+   </div>
+   <div class="Box2">
   <div class="tab-pane" id="compose">
 
       <div class="container">
-    <div class="content-container clearfix">
-        <h1 class="content-title">Compose</h1>
-        <div class="col-md-12">
+        <h1 class="content-title" style="color:white;text-align:center;">Compose</h1>
+        <div class="col-md-10">
             <div class="form-group">
                 <input id="tokenfield" type="text" class="form-control" placeholder="To" />
             </div>
@@ -35,7 +60,9 @@
   </div>
 
   </div>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 </BODY>
 </HTML>

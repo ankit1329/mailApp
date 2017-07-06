@@ -46,6 +46,7 @@ h1.content-title{
     font-size:32px;
     font-weight:300;
     text-align:center;
+    text-decoration-color:#fff;
     margin-top:0;
     margin-bottom:20px;
     font-family: 'Open Sans', sans-serif!important;
@@ -91,4 +92,25 @@ ul.mail-list li span.mail-message-preview{
 }
 .mail-search{
     border-bottom-color:#7FBCC9!important;
+}
+.Box1{
+  height: 100%;
+  width:220px;
+  background-color: white;
+  border: 5px black;
+  position: absolute;
+  display: inline-block;
+  background-image: url(../img/background-images-for-websites-10.jpg);
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-top: 100px;
+}
+.Box2{
+  height: 100%;
+  width:79%;
+  background-image: url(../img/background-images-for-websites-14.jpg);
+  border: 5px black;
+  display: inline-block;
+  position: : absolute;
+  margin-left: 230px;
 }

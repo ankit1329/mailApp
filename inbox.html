@@ -2,19 +2,45 @@
    <HEAD>
       <meta charset="utf-8"/>
 
-      <script src="js/mail.js"></script>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
       <link rel='stylesheet' href="css/mail.css" />
    </HEAD>
 <BODY>
+  <nav class="navbar navbar-inverse">
+ <div class="container">
+   <div class="navbar-header">
+     <a class="navbar-brand" href="#">Mail App</a>
+   </div>
+
+ </nav>
+ <div class=Container-fluid>
+   <div class="Box1">
+     <ul>
+
+         <li class="btn btn-md btn-warning btn-block">
+             <a href="compose.html">Compose</a>
+         </li>
+         <li class="btn btn-md btn-warning btn-block active">
+             <a href="inbox.html">Inbox   </a>
+         </li>
+         <li class="btn btn-md btn-warning btn-block">
+             <a href="draft.html">Draft  </a>
+         </li>
+         <li class="btn btn-md btn-warning btn-block">
+             <a href="sent.html">Sent Items</a>
+         </li>
+
+     </ul>
+   </div>
+   <div class="Box2" >
+  <div class="tab-content" >
+    <div  class="tab-pane active" id="inbox">
 
 
-  <div class="tab-content">
-    <div class="tab-pane active" id="inbox">
 
-        <div class="container">
-             <div class="content-container clearfix">
                  <div class="col-md-12">
-                     <h1 class="content-title">Inbox</h1>
+                     <h1 class="content-title" style="color:white">Inbox</h1>
 
                      <input type="search" placeholder="Search Mail" class="form-control mail-search" />
 
@@ -61,5 +87,9 @@
 
     </div>
 
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </BODY>
 </HTML>

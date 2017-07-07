@@ -13,11 +13,12 @@ let userList= [
 var active='';
 function validateForm()
 {
-    var x = document.forms["myForm"]["username"].value;
-    var y = document.forms["myForm"]["pwd1"].value;
+    let x = document.forms["myForm"]["username"].value;
+    let y = document.forms["myForm"]["pwd1"].value;
     for(let key of userList){
       if(key.name==x && key.password==y){
         active=x;
+        sessionStorage.active = active;
         setTimeout(function() {window.location = "inbox.html" });
         showName();
         return true;
@@ -64,7 +65,8 @@ function validateForm()
 }
 
 function showName(){
-var e=document.getElementById("xyz");
-console.log(active);
+  var active = sessionStorage.active;
+let e=document.getElementById("xyz");
+// console.log(active);
 e.innerHTML=active;
 }

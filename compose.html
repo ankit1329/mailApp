@@ -1,60 +1,62 @@
 <HTML>
-   <HEAD>
-      <meta charset="utf-8"/>
-      <title>Compose Shark Mail</title>
-      <link rel="icon" href="img/Funny-Shark-Logo-Design.png" type="image/png">
+
+<HEAD>
+  <meta charset="utf-8" />
+  <title>Compose Shark Mail</title>
+  <link rel="icon" href="img/Funny-Shark-Logo-Design.png" type="image/png">
 
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
-      <link rel='stylesheet' href="css/mail.css" />
-   </HEAD>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <link rel='stylesheet' href="css/mail.css" />
+</HEAD>
+
 <BODY onload="showName();displayDefault();">
 
   <nav class="navbar navbar-inverse">
-  <div class="container">
-   <div class="navbar-header">
-     <div class="navbarlogo">
-       <img class="pull-left" src="img/Funny-Shark-Logo-Design.png" /><span>     <a class="navbar-brand pull-right" href="#">&nbsp;&nbsp;Shark Mail</a>
+    <div class="container">
+      <div class="navbar-header">
+        <div class="navbarlogo">
+          <img class="pull-left" src="img/Funny-Shark-Logo-Design.png" /><span>     <a class="navbar-brand pull-right" href="#">&nbsp;&nbsp;Shark Mail</a>
   </span>
-     </div>
-   </div>
+        </div>
+      </div>
 
   </nav>
- <div class=Container-fluid>
-   <div class="Box1">
-     <div class="dropdown" style="margin-left:40px;">
-  <button class="dropbtn"> <span id='xyz' class="glyphicon glyphicon-user"></span><br></button>
-  <div class="dropdown-content">
-    <a href="login.html">Logout</a>
+  <div class=Container-fluid>
+    <div class="Box1">
+      <div class="dropdown" style="margin-left:40px;">
+        <button class="dropbtn"> <span id='xyz' class="glyphicon glyphicon-user"></span><br></button>
+        <div class="dropdown-content">
+          <a href="login.html">Logout</a>
 
+        </div>
+      </div>
+      <div style="margin-top:100px">
+        <ul style="list-style: none;">
+          <li>
+            <button onclick="window.location.href='compose.html'" class="btn btn-sm btn-success btn-block custom active">Compose</button>
+          </li>
+          <li>
+            <br />
+          </li>
+          <li>
+            <br />
+          </li>
+          <li>
+            <button onclick="window.location.href='inbox.html'" class="btn btn-md btn-primary btn-block custom active">Inbox</button>
+          </li>
+          <li>
+            <button onclick="window.location.href='draft.html'" class="btn btn-md btn-primary btn-block custom active">Draft</button>
+          </li>
+          <li>
+            <button onclick="window.location.href='sent.html'" class="btn btn-md btn-primary btn-block custom active">Sent Items</button>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
-</div>
-     <div style="margin-top:100px">
-     <ul style="list-style: none;">
-         <li>
-             <button onclick="window.location.href='compose.html'" class="btn btn-sm btn-success btn-block custom active">Compose</button>
-         </li>
-         <li>
-<br />
-         </li>
-         <li>
-<br />
-         </li>
-         <li>
-           <button onclick="window.location.href='inbox.html'" class="btn btn-md btn-primary btn-block custom active">Inbox</button>
-         </li>
-         <li>
-           <button onclick="window.location.href='draft.html'" class="btn btn-md btn-primary btn-block custom active">Draft</button>
-         </li>
-         <li>
-           <button onclick="window.location.href='sent.html'" class="btn btn-md btn-primary btn-block custom active">Sent Items</button>
-         </li>
-       </ul>
-     </div>
-   </div>
-   </div>
-   <div class="Box2">
-  <div class="tab-pane" id="compose">
+  <div class="Box2">
+    <div class="tab-pane" id="compose">
 
       <div class="container">
         <h1 class="content-title" style="color:white">Compose</h1>
@@ -63,16 +65,16 @@
 
 
             <div class="form-group">
-                <input id="tokenfield" name="email" type="text" class="form-control" placeholder="To" />
+              <input id="tokenfield" name="email" type="text" class="form-control" placeholder="To" />
             </div>
             <div class="form-group">
-                <input id='cc' type="text" class="form-control" placeholder="Cc" />
+              <input id='cc' type="text" class="form-control" placeholder="Cc" />
             </div>
             <div class="form-group">
-                <input id="bcc" type="text" class="form-control" placeholder="Bcc" />
+              <input id="bcc" type="text" class="form-control" placeholder="Bcc" />
             </div>
             <div class="form-group">
-                <input id="sub" type="text" class="form-control" placeholder="Subject" />
+              <input id="sub" type="text" class="form-control" placeholder="Subject" />
             </div>
             <div class="form-group">
               <textarea id="msg" class="form-control" placeholder="message"></textarea>
@@ -80,33 +82,33 @@
             <div class="row">
               <div class="col-lg-3">
 
-            <div class="form-group">
-              <input id="fileupload" type="file" class="form-control">
-              <!-- <label for="fileupload"> Select a file to upload</label> -->
+                <div class="form-group">
+                  <input id="fileupload" type="file" class="form-control">
+                  <!-- <label for="fileupload"> Select a file to upload</label> -->
+                </div>
+              </div>
             </div>
-          </div>
-          </div>
             <div class="row">
               <div class="col-lg-3 col-lg-offset-1">
 
-            <div class="btn-send">
-            <button type="submit" onclick="" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-send"></span> Send</button>
+                <div class="btn-send">
+                  <button type="submit" onclick="" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-send"></span> Send</button>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="btn-send">
+                  <button onclick=save() class="btn btn-success btn-lg"><span class="glyphicon glyphicon-send"></span> Save</button>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="btn-send">
+                  <button onclick="window.location.href='inbox.html'" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-send"></span> Cancel</button>
+                </div>
+              </div>
             </div>
-          </div>
-            <div class="col-lg-3">
-            <div class="btn-send">
-            <button onclick=save() class="btn btn-success btn-lg"><span class="glyphicon glyphicon-send"></span> Save</button>
-            </div>
-          </div>
-          <div class="col-lg-3">
-          <div class="btn-send">
-          <button onclick="window.location.href='inbox.html'" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-send"></span> Cancel</button>
-          </div>
+          </form>
         </div>
-        </div>
-</form>
-        </div>
-    </div>
+      </div>
     </div>
 
   </div>
@@ -114,8 +116,9 @@
   <script src="js/jsvalid.js"></script>
   <script src="js/compose.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 </BODY>
+
 </HTML>

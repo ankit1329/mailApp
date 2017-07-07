@@ -9,7 +9,7 @@
       <link rel='stylesheet' href="css/mail.css" />
 
    </HEAD>
-<BODY onload="showName(); createInbox();">
+<BODY onload="showName(); displayContent();">
   <nav class="navbar navbar-inverse">
  <div class="container">
    <div class="navbar-header">
@@ -60,12 +60,13 @@
 
 
                  <div class="col-md-11">
-                     <h1 class="content-title" style="color:white">Inbox</h1>
+                     <h1 class="content-title" style="color:white">Content</h1>
 
-                     <input id='srch' type="search" placeholder="Search Mail" class="form-control mail-search" />
-                     <span><button class="btn btn-default btn-sm btn-success" onclick="find();"><em>search</em></button></span>
+                     <!-- <input id='srch' type="search" placeholder="Search Mail" class="form-control mail-search" />
+                     <span><button class="btn btn-default btn-sm btn-success" onclick="find();"><em>search</em></button></span> -->
 
-                     <ul id="list" class="mail-list">
+                     <ul id="maildisplay" class="mail-list">
+                       
 
                      </ul>
                  </div>
@@ -73,6 +74,7 @@
          </div>
 
     </div>
+    <script src="js/content.js"></script>
     <script src="js/jsvalid.js"></script>
     <script src="js/inbox.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
